@@ -483,5 +483,19 @@ header, nav {
     }
 }
 
-.skip-to-content a { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
-.skip-to-content a:focus, .skip-to-content a:active { position: static; left: 0; width: auto; height: auto; overflow: visible; text-decoration: underline; }
+.skip-to-content a {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip-to-content a:focus, .skip-to-content a:active {
+    position: static;
+    left: 0;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    text-decoration: underline;
+}
