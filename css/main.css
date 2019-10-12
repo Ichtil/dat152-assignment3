@@ -1,65 +1,68 @@
 html {
-  font-size: 100%;
-  font-family: Helvetica, Arial, sans-serif;
-  color: #222;
+    font-size: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #222;
 }
 
 body {
-  background-color: #000;
-  margin: 0;
-  font-size: 12px;
-  line-height: 1.3;
-  width: 100%;
-  min-width: 320px;
+    background-color: #000;
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.3;
+    width: 100%;
+    min-width: 320px;
 }
 
 #container {
-  border-left: 12px;
-  border-right: 12px
+    border-left: 12px;
+    border-right: 12px
 }
 
 header, nav {
-  display: block;
+    display: block;
 }
 
 #header-container .utility-bar {
-  width: 100%;
-  background-color: #000;
-  position: relative;
-  height: auto;
-  padding-top: 20px
+    width: 100%;
+    background-color: #000;
+    position: relative;
+    height: auto;
+    padding-top: 20px
 }
+
 #header-container .utility-bar .logo-container {
-  width:auto;
-  height: 75px;
-  position: static;
+    width: auto;
+    height: 75px;
+    position: static;
 }
+
 #header-container .logo-container .logo-box {
-  float: left;
-  cursor: pointer;
-  height: 38px;
-  width: 112px;
-  padding: 10px;
+    float: left;
+    cursor: pointer;
+    height: 38px;
+    width: 112px;
+    padding: 10px;
 }
 
 #header-container .logo-box img {
-  float: left;
-  margin: 0;
-  height: 25px;
-  padding: 13px 8px;
-  width: 100px
+    float: left;
+    margin: 0;
+    height: 25px;
+    padding: 13px 8px;
+    width: 100px
 }
 
 #nav-container {
-  position:static;
+    position: static;
 }
+
 #nav-container .nav-menu {
-  display: none;
+    display: none;
 }
 
 #page {
-  width:inherit;
-  position: relative;
+    width: inherit;
+    position: relative;
 }
 
 #home-page .res-form {
@@ -74,102 +77,106 @@ header, nav {
 }
 
 
-
-
-
 #service-container {
-  /* display: grid; */
-  background-color: #ffd100;
-  border: 12px solid #ffd100;
-  border-radius: 20px;
-  color: #000;
-  margin: auto;
-  text-align: center;
-  width: 100%;
+    /* display: grid; */
+    background-color: #ffd100;
+    border: 12px solid #ffd100;
+    border-radius: 20px;
+    color: #000;
+    margin: auto;
+    text-align: center;
+    width: 100%;
 
 }
+
 #service-container #service-label {
-  padding-top: 20px;
+    padding-top: 20px;
 }
+
 #service-container img {
-  width:100px;
-  padding: 10px 0 20px 0;
+    width: 100px;
+    padding: 10px 0 20px 0;
 }
 
 
 #reservation-container {
-  background-color: #ffd100;
-  margin:30px auto;
-  padding: 20px 0;
-  width: 95%;
-  border-radius: 20px;
-  color: #000;
+    background-color: #ffd100;
+    margin: 30px auto;
+    padding: 20px 0;
+    width: 95%;
+    border-radius: 20px;
+    color: #000;
 }
+
 #reservation-container #reservation-heading {
-  text-align: center;
+    text-align: center;
 }
+
 #reservation-container form {
-  margin: auto;
-  padding: 0 30px;
+    margin: auto;
+    padding: 0 30px;
 }
+
 #reservation-container #location-time-date {
-  width: 100%;
-  padding-bottom: 20px;
-  border-bottom: 4px solid #000;
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 4px solid #000;
 }
+
 #reservation-container .label {
-  font-weight: bold;
+    font-weight: bold;
 }
+
 #reservation-container #car-details {
-  padding: 20px 0;
+    padding: 20px 0;
 }
 
-#reservation-container #car-details select{
-  margin-top: 5px;
+#reservation-container #car-details select {
+    margin-top: 5px;
 
-  width: 60px
+    width: 60px
 }
 
 
 #reservation-container #location-time-date input {
-  display:list-item;
-  margin: 5px 0;
-  width: 90%;
-  height: 20px;
-  line-height: 11pt;
-  font-size: 11pt;
+    display: list-item;
+    margin: 5px 0;
+    width: 90%;
+    height: 20px;
+    line-height: 11pt;
+    font-size: 11pt;
 }
 
 #reservation-container #submit-container {
-  overflow: auto;
-  margin: auto;
-  width:100%;
+    overflow: auto;
+    margin: auto;
+    width: 100%;
 }
 
 #reservation-container #submit-container #price {
-  /* float: left; */
-  margin:auto;
+    /* float: left; */
+    margin: auto;
 
 }
 
 
 #reservation-container #submit-container .button {
 
-  /* float: right; */
-  right: 0;
-  background-color: #000;
-  color: #ffd100;
-  padding: 15px 60px;
+    /* float: right; */
+    right: 0;
+    background-color: #000;
+    color: #ffd100;
+    padding: 15px 60px;
 
-  border: none;
-  border-radius: 10px;
-  font-size: 12pt;
-  font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    font-size: 12pt;
+    font-weight: bold;
 }
 
 
-#reservation-container #submit-container .button:hover{
-    cursor:pointer;
+#reservation-container #submit-container .button:hover {
+    cursor: pointer;
     transform: scale(1.02);
     transition: background .2s linear, -webkit-transform .4s cubic-bezier(0, .5, .6, 1);
 
@@ -177,65 +184,70 @@ header, nav {
 
 @media only screen and (min-width: 480px) {
 
-  #reservation-container {
+    #reservation-container {
 
-    padding: 20px 0;
-    width: 400px;
+        padding: 20px 0;
+        width: 400px;
 
-  }
-  #reservation-container #submit-container #price {
-    float: left;
-  }
-  #reservation-container #submit-container .button {
-    float: right;
-  }
+    }
+
+    #reservation-container #submit-container #price {
+        float: left;
+    }
+
+    #reservation-container #submit-container .button {
+        float: right;
+    }
 }
 
 #guide-container {
-  margin: 30px auto;
-  background-color: #ffd100;
-  width: 100%;
-  border-radius: 20px;
-  color: #000;
-  text-align: center;
-}
-#guide-container #guide-label{
-  padding: 20px;
+    margin: 30px auto;
+    background-color: #ffd100;
+    width: 100%;
+    border-radius: 20px;
+    color: #000;
+    text-align: center;
 }
 
-#guide-container #guide-table{
+#guide-container #guide-label {
+    padding: 20px;
+}
+
+#guide-container #guide-table {
     width: 95%;
-    margin:auto;
+    margin: auto;
 
 }
-#guide-container #guide-table table{
+
+#guide-container #guide-table table {
 
     border-collapse: collapse;
 }
 
- #guide-container #guide-table th, #guide-container #guide-table td{
-  background-color: #fff;
-  border: 1px solid #000;
+#guide-container #guide-table th, #guide-container #guide-table td {
+    background-color: #fff;
+    border: 1px solid #000;
 
-  padding: 5px;
-  font-size: 7pt
+    padding: 5px;
+    font-size: 7pt
 }
 
-#guide-container #guide-table th:hover, #guide-container #guide-table td:hover{
-  transform: scale(1.01);
-  transition: background .2s linear, -webkit-transform .4s cubic-bezier(0, .5, .6, 1);
+#guide-container #guide-table th:hover, #guide-container #guide-table td:hover {
+    transform: scale(1.01);
+    transition: background .2s linear, -webkit-transform .4s cubic-bezier(0, .5, .6, 1);
 }
 
 
-
-#guide-container #guide-table img{
- width: 40px;
+#guide-container #guide-table img {
+    width: 40px;
 }
+
 #guide-container #guide-button {
     padding: 20px
 
 }
-#guide-container #guide-button button{
+
+#guide-container #guide-button button {
     background-color: #000;
     color: #ffd100;
     padding: 20px 70px;
@@ -244,207 +256,229 @@ header, nav {
     font-size: 12pt;
     font-weight: bold;
 }
-#guide-container #guide-button button:hover{
-    cursor:pointer;
+
+#guide-container #guide-button button:hover {
+    cursor: pointer;
     transform: scale(1.05);
     transition: background .2s linear, -webkit-transform .4s cubic-bezier(0, .5, .6, 1);
 
 }
 
 @media only screen and (min-width: 600px) {
-  body, #container {
-    min-width: 600px;
-  }
-  #header-container .utility-bar {
-    height: 68px;
-    /* font-size: 9pt */
-  }
-  #header-container .utility-bar .logo-container {
-    height: 68px;
-    position: absolute;
-    left: 0;
-    bottom: 0
-  }
-  #header-container .logo-container .logo-box {
-    height: 68px;
-    width: 166px;
-    padding:0;
-  }
-  #header-container .logo-box img {
-    height: 22px;
-    padding: 23px 0px 23px 10px;
-    width: 82px
-  }
-  #nav-container {
-    position: relative;
-  }
+    body, #container {
+        min-width: 600px;
+    }
 
-  #nav-container .nav-menu {
-    /* background-color: #000; */
-    display: block;
-    height: 50px;
-    width: 100%;
-    text-transform: uppercase;
-    font-size: 10pt;
-  }
-  #nav-container .nav-menu table {
-    width: auto;
-    padding: 0;
-    margin: 0px;
-    border-collapse: collapse;
-    float: left;
-    position: relative;
-    background-color: #000;
+    #header-container .utility-bar {
+        height: 68px;
+        /* font-size: 9pt */
+    }
 
-  }
-  #nav-container .nav-menu td {
-    vertical-align: middle;
-    border-left: 0;
-    padding: 0;
-    margin: 0;
-  }
-  #nav-container .nav-menu span, #nav-container .nav-menu a {
-    font-size: 9pt;
-    display: table-cell;
-    height: 50px;
-    vertical-align: middle;
-    padding: 0 9px;
-    color: #fff;
-    text-decoration: none;
-    /* zoom:1; */
-    border-left: 0;
-  }
+    #header-container .utility-bar .logo-container {
+        height: 68px;
+        position: absolute;
+        left: 0;
+        bottom: 0
+    }
 
-  #nav-container .nav-menu span:hover, #nav-container .nav-menu a:hover {
-    background-color: #ffd100;
-    color: #fff;
-  }
+    #header-container .logo-container .logo-box {
+        height: 68px;
+        width: 166px;
+        padding: 0;
+    }
 
-  #service-container {
+    #header-container .logo-box img {
+        height: 22px;
+        padding: 23px 0px 23px 10px;
+        width: 82px
+    }
 
-    margin: 100px auto;
+    #nav-container {
+        position: relative;
+    }
 
-    width: 450px;
+    #nav-container .nav-menu {
+        /* background-color: #000; */
+        display: block;
+        height: 50px;
+        width: 100%;
+        text-transform: uppercase;
+        font-size: 10pt;
+    }
 
-  }
-  #guide-container {
+    #nav-container .nav-menu table {
+        width: auto;
+        padding: 0;
+        margin: 0px;
+        border-collapse: collapse;
+        float: left;
+        position: relative;
+        background-color: #000;
 
-    width: 90%;
+    }
 
-  }
+    #nav-container .nav-menu td {
+        vertical-align: middle;
+        border-left: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    #nav-container .nav-menu span, #nav-container .nav-menu a {
+        font-size: 9pt;
+        display: table-cell;
+        height: 50px;
+        vertical-align: middle;
+        padding: 0 9px;
+        color: #fff;
+        text-decoration: none;
+        /* zoom:1; */
+        border-left: 0;
+    }
+
+    #nav-container .nav-menu span:hover, #nav-container .nav-menu a:hover {
+        background-color: #ffd100;
+        color: #fff;
+    }
+
+    #service-container {
+
+        margin: 100px auto;
+
+        width: 450px;
+
+    }
+
+    #guide-container {
+
+        width: 90%;
+
+    }
 
 
 }
 
 @media only screen and (min-width: 768px) {
-  body, #container {
-    min-width: 768px;
-  }
+    body, #container {
+        min-width: 768px;
+    }
 
-  #home-page .res-form {
-    background-color: #fff;
-    width: 364px;
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    z-index: 5;
-  }
-  #guide-container {
-    margin: 30px auto;
-    background-color: #ffd100;
-    width: 90%;
-    border-radius: 20px;
-    color: #000;
-    text-align: center;
-  }
-  #guide-container #guide-label{
-    padding: 20px;
-  }
+    #home-page .res-form {
+        background-color: #fff;
+        width: 364px;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        z-index: 5;
+    }
 
-  #guide-container #guide-table{
-      width: 90%;
-      margin:auto;
-  }
-  #guide-container #guide-table table{
+    #guide-container {
+        margin: 30px auto;
+        background-color: #ffd100;
+        width: 90%;
+        border-radius: 20px;
+        color: #000;
+        text-align: center;
+    }
 
-      border-collapse: separate;
-  }
+    #guide-container #guide-label {
+        padding: 20px;
+    }
 
-   #guide-container #guide-table th, #guide-container #guide-table td{
-    background-color: #fff;
-    border: 2px solid #000;
-    border-radius: 20px;
-    font-size: 11pt
-  }
+    #guide-container #guide-table {
+        width: 90%;
+        margin: auto;
+    }
 
-  #guide-container #guide-table th:hover, #guide-container #guide-table td:hover{
-    transform: scale(1.01);
-    transition: background .2s linear, -webkit-transform .4s cubic-bezier(0, .5, .6, 1);
-  }
+    #guide-container #guide-table table {
+
+        border-collapse: separate;
+    }
+
+    #guide-container #guide-table th, #guide-container #guide-table td {
+        background-color: #fff;
+        border: 2px solid #000;
+        border-radius: 20px;
+        font-size: 11pt
+    }
+
+    #guide-container #guide-table th:hover, #guide-container #guide-table td:hover {
+        transform: scale(1.01);
+        transition: background .2s linear, -webkit-transform .4s cubic-bezier(0, .5, .6, 1);
+    }
 
 
+    #guide-container #guide-table img {
+        width: 100px
+    }
 
-  #guide-container #guide-table img{
-   width: 100px
-  }
-  #guide-container #guide-button {
-      padding: 20px
+    #guide-container #guide-button {
+        padding: 20px
 
-  }
-  #guide-container #guide-button button{
-      background-color: #000;
-      color: #ffd100;
-      padding: 20px 70px;
-      border: none;
-      border-radius: 10px;
-      font-size: 12pt;
-      font-weight: bold;
-  }
-  #guide-container #guide-button button:hover{
-      cursor:pointer;
-      transform: scale(1.05);
-      transition: background .2s linear, -webkit-transform .4s cubic-bezier(0, .5, .6, 1);
+    }
 
-  }
+    #guide-container #guide-button button {
+        background-color: #000;
+        color: #ffd100;
+        padding: 20px 70px;
+        border: none;
+        border-radius: 10px;
+        font-size: 12pt;
+        font-weight: bold;
+    }
+
+    #guide-container #guide-button button:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        transition: background .2s linear, -webkit-transform .4s cubic-bezier(0, .5, .6, 1);
+
+    }
 }
 
 @media only screen and (min-width: 992px) {
-  body, #container {
-    min-width: 992px;
-  }
-  #header-container .utility-bar {
-    height: 98px;
-  }
-  #header-container .utility-bar .logo-container {
-    height: 98px;
-  }
-  #header-container .logo-container .logo-box {
-    height: 98px;
-    width: 357px;
-    padding:0;
-  }
-  #header-container .logo-box img {
-    height: 48px;
-    padding: 35px;
-    width: 178px
-  }
-  #nav-container .nav-menu table {
-    padding: 0 0 0 9px;
-  }
-  #nav-container .nav-menu span, #nav-container .nav-menu a {
-    font-size: 12pt;
-    padding: 0 14px;
-  }
-  #nav-container .nav-menu span:hover, #nav-container .nav-menu a:hover {
-    background-color: #ffd100;
-    color: #fff;
-  }
+    body, #container {
+        min-width: 992px;
+    }
+
+    #header-container .utility-bar {
+        height: 98px;
+    }
+
+    #header-container .utility-bar .logo-container {
+        height: 98px;
+    }
+
+    #header-container .logo-container .logo-box {
+        height: 98px;
+        width: 357px;
+        padding: 0;
+    }
+
+    #header-container .logo-box img {
+        height: 48px;
+        padding: 35px;
+        width: 178px
+    }
+
+    #nav-container .nav-menu table {
+        padding: 0 0 0 9px;
+    }
+
+    #nav-container .nav-menu span, #nav-container .nav-menu a {
+        font-size: 12pt;
+        padding: 0 14px;
+    }
+
+    #nav-container .nav-menu span:hover, #nav-container .nav-menu a:hover {
+        background-color: #ffd100;
+        color: #fff;
+    }
 }
 
 
 @media only screen and (min-width: 1248px) {
-  #container {
-    width: 1248px;
-    margin: 0 auto;
-  }
+    #container {
+        width: 1248px;
+        margin: 0 auto;
+    }
 }
