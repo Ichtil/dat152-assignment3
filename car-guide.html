@@ -12,7 +12,7 @@
             <section class="utility-bar">
                 <article class="logo-container">
                     <div class="logo-box">
-                        <img src="https://images.hertz.com/rac/misc/refresh09/logo_hertz_app.png">
+                        <img src="https://images.hertz.com/rac/misc/refresh09/logo_hertz_app.png" alt="Company logo">
                     </div>
                 </article>
             </section>
@@ -66,16 +66,18 @@
                         <div id="guide-label">
                             <h1 tabindex="0" id="main-content">Car Categories</h1>
                         </div>
-                        <form id="form" action="car-guide.html" method="GET">
+                        <!-- todo jump to next row / end of table links -->
+                        <!-- todo accessibility comments when traversing the table with tab, it's hard to say what you are looking at -->
+                        <form id="form" action="index.html" method="GET">
                             <div id="guide-table">
                                 <table width="100%" cellpadding="5px" cellspacing="10px">
                                     <tr>
-                                        <th tabindex="0">Categories</th>
-                                        <th tabindex="0">Daily rental price</th>
-                                        <th tabindex="0">Weekly rental price</th>
-                                        <th tabindex="0">Weekend rental price</th>
-                                        <th tabindex="0">Car</th>
-                                        <th tabindex="0">Chosen</th>
+                                        <th><span tabindex="0">Categories</span></th>
+                                        <th><span tabindex="0">Daily rental price</span></th>
+                                        <th><span tabindex="0">Weekly rental price</span></th>
+                                        <th><span tabindex="0">Weekend rental price</span></th>
+                                        <th><span tabindex="0">Car</span></th>
+                                        <th><span tabindex="0">Order</span></th>
                                     </tr>
                                     <tr>
                                         <th tabindex="0">A</th>
@@ -83,10 +85,15 @@
                                         <td tabindex="0">500$</td>
                                         <td tabindex="0">80$</td>
                                         <td>
-                                            <img tabindex="0" src="img/A.jpg" alt="A category car">
+                                            <img tabindex="0" src="img/A.jpg"
+                                                 alt="A category car image. Car is white and small, nice color. But you can't see anyways, so why am I even trying.">
                                         </td>
                                         <th>
-                                            <input type="radio" name="categoryChoice" value="A" id="carA">
+                                            <label>
+                                                <input type="radio" name="car-category" value="A" id="carA"
+                                                       aria-label="Select radio button to get car of category A"
+                                                       required>
+                                            </label>
                                         </th>
                                     </tr>
                                     <tr>
@@ -95,10 +102,14 @@
                                         <td tabindex="0">510$</td>
                                         <td tabindex="0">90$</td>
                                         <td>
-                                            <img tabindex="0" src="img/B.jpg" alt="B category car">
+                                            <img tabindex="0" src="img/B.jpg" alt="B category car image,">
                                         </td>
                                         <th>
-                                            <input type="radio" name="categoryChoice" value="B" id="carB">
+                                            <label>
+                                                <input type="radio" name="car-category" value="B" id="carB"
+                                                       aria-label="Select radio button to get car of category B"
+                                                       required>
+                                            </label>
                                         </th>
                                     </tr>
                                     <tr>
@@ -107,10 +118,15 @@
                                         <td tabindex="0">520$</td>
                                         <td tabindex="0">100$</td>
                                         <td>
-                                            <img tabindex="0" src="img/C.jpg" alt="C category car">
+                                            <img tabindex="0" src="img/C.jpg"
+                                                 alt="C category car image. Car is nice, very nice, you should get it. Trust me.">
                                         </td>
                                         <th>
-                                            <input type="radio" name="categoryChoice" value="C" id="carC">
+                                            <label>
+                                                <input type="radio" name="car-category" value="C" id="carC"
+                                                       aria-label="Select radio button to get car of category C"
+                                                       required>
+                                            </label>
                                         </th>
                                     </tr>
                                     <tr>
@@ -122,7 +138,11 @@
                                             <img tabindex="0" src="img/D.jpg" alt="D category car">
                                         </td>
                                         <th>
-                                            <input type="radio" name="categoryChoice" value="D" id="carD">
+                                            <label>
+                                                <input type="radio" name="car-category" value="D" id="carD"
+                                                       aria-label="Select radio button to get car of category D"
+                                                       required>
+                                            </label>
                                         </th>
                                     </tr>
                                 </table>

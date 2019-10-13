@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Car Rental</title>
+    <meta charset="UTF-8">
+    <title>Finished booking</title>
     <link rel="stylesheet" href="css/main.css">
-    <script type="text/javascript">
+    <script type="module">
         "use strict";
+        import {calcPrice} from "./calc-cost.js";
+
         window.onload = () => {
             const searchParams = new URL(window.location.href).searchParams;
             // fill form values from url
-            searchParams.forEach((x, y) => document.getElementById(y).value = x);
+            searchParams.forEach((x, y) => document.getElementById(y).innerText = x);
+            document.getElementById("cost").innerText = calcPrice(searchParams);
         }
     </script>
 </head>
@@ -45,7 +48,7 @@
                                 <a href="not-implemented.html">Locations</a>
                             </td>
                             <td>
-                                <a href="not-implemented.html">Bussines Hire</a>
+                                <a href="not-implemented.html">Business Hire</a>
                             </td>
                             <td>
                                 <a href="not-implemented.html">Offers</a>
@@ -71,44 +74,21 @@
             <div id="home-page">
                 <div id="reservation-container">
                     <div id="reservation-heading">
-                        <h1 id="main-content">Rent a car</h1>
+                        <h1 id="main-content" tabindex="0">Booking confirmed!</h1>
                     </div>
-                    <form action="confirm-booking.html" method="GET">
-                        <div id="location-time-date">
-                            <label class="label">
-                                Pick-up Location
-                                <input type="text" name="location" id="location" required>
-                            </label>
-                            <label class="label">
-                                Pick-up Date and Time
-                                <input type="date" name="pick-up-date" value="" required aria-label="Pickup date input with format month - day - year">
-                                <input type="time" name="pick-up-time" value="" required aria-label="Pickup time input with format hour - minute - PM or AM">
-                            </label>
-                            <label class="label">
-                                Return Date and Time
-                                <input type="date" name="return-date" value="" required aria-label="Return date input with format month - day - year">
-                                <input type="time" name="return-time" value="" required aria-label="Return time input with format hour - minute - PM or AM">
-                            </label>
-                        </div>
-                        <div id="car-details">
-                            <label class="label">
-                                Car Category
-                                <select name="car-category" id="car-category" class="label">
-                                    <option value="A">A</option>
-                                    <option value="B">B</option>
-                                    <option value="C">C</option>
-                                    <option value="D">D</option>
-                                </select>
-                            </label>
-                        </div>
-                        <div id="submit-container">
-                            <input type="submit" class="button" name="" value="Book">
-                        </div>
-                    </form>
+                    <div style="padding: 10px" >
+                        <span tabindex="0">You are borrowing:</span>
+                        <ul>
+                            <li tabindex="0">Category: <b id="car-category"> </b></li>
+                            <li tabindex="0">From city (location): <b id="location"></b></li>
+                            <li tabindex="0">From date <b id="pick-up-date"></b> and time <b id="pick-up-time"></b></li>
+                            <li tabindex="0">To date: <b id="return-date"></b> and time <b id="return-time"></b></li>
+                            <li tabindex="0">Cost (usd): <b id="cost"></b></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </body>
 </html>
