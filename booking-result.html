@@ -13,6 +13,8 @@
             // fill form values from url
             searchParams.forEach((x, y) => document.getElementById(y).innerText = x);
             document.getElementById("cost").innerText = calcPrice(searchParams);
+            const carCat = searchParams.get("car-category");
+            document.getElementById('picture').src = "img/" + carCat + ".jpg";
         }
     </script>
 </head>
@@ -23,7 +25,7 @@
             <section class="utility-bar">
                 <article class="logo-container">
                     <div class="logo-box">
-                        <h1>Vrum Vrum</h1>
+                        <h1 tabindex="0">Vrum Vrum</h1>
                     </div>
                 </article>
             </section>
@@ -85,6 +87,7 @@
                             <li tabindex="0">To date: <strong id="return-date"></strong> and time <strong id="return-time"></strong></li>
                             <li tabindex="0">Cost (usd): <strong id="cost"></strong></li>
                         </ul>
+                        <img style="padding: 10px 30px 10px;" id="picture" src="" alt="Picture of your choosen car.">
                     </div>
                 </div>
             </div>

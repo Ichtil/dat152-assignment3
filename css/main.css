@@ -115,6 +115,7 @@ h1 {
     width: 95%;
     border-radius: 20px;
     color: #000;
+    font-size: 15px;
 }
 
 #reservation-container #reservation-heading {
