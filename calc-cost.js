@@ -6,5 +6,6 @@ export function calcPrice(searchParams) {
     const timeDiff = (new Date(to)) - (new Date(from));
     const days = timeDiff / (1000 * 60 * 60 * 24);
     const pricePerDay = carCat === "A" ? 35 : carCat === "B" ? 45 : carCat === "C" ? 50 : carCat === "D" ? 60 : 0;
+    console.log('ppd', pricePerDay, "days", days);
     return pricePerDay * days;
 }

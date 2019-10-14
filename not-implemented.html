@@ -12,8 +12,8 @@
         <div id="header-container">
             <section class="utility-bar">
                 <article class="logo-container">
-                    <div class="logo-box">
-                        <h1 tabindex="0">Vrum Vrum</h1>
+                    <div class="">
+                        <h1 tabindex="0">Vrum Vrum company</h1>
                     </div>
                 </article>
             </section>
@@ -65,10 +65,10 @@
             <div id="home-page">
                 <div id="service-container">
                     <div id="service-label">
-                        <h2 id="main-content">Service not implemented yet.</h2>
-                        <h2>Sorry :(</h2>
+                        <h2 id="main-content" tabindex="0">Service not implemented yet.</h2>
+                        <h2 tabindex="0">Sorry :(</h2>
                     </div>
-                    <img src="img/warning.svg" alt="404 picture">
+                    <img tabindex="0" src="img/warning.svg" alt="404 picture">
                 </div>
             </div>
         </div>
@@ -78,10 +78,11 @@
     <article id="social-bar">
         <form>
             <fieldset>
-                <label for="social-email">.
-                    <input style="width: 80%; margin-top: 10px" type="text" id="social-email" value="Enter you email!">
+                <label for="social-email" id="social-label">
+                    Enter your email to receive news from us.
+                    <input type="text" id="social-email" value="Your email!">
                 </label>
-                <button type="button">Sign up!</button>
+                <button type="button" id="social-button">Sign up!</button>
             </fieldset>
         </form>
         <ul>

@@ -26,8 +26,8 @@
         <div id="header-container">
             <section class="utility-bar">
                 <article class="logo-container">
-                    <div class="logo-box">
-                        <h1 tabindex="0">Vrum Vrum</h1>
+                    <div class="">
+                        <h1 tabindex="0">Vrum Vrum company</h1>
                     </div>
                 </article>
             </section>
@@ -118,7 +118,7 @@
                             </label>
                         </div>
                         <strong>The cost is: <span id="cost">0</span></strong>
-                        <div id="submit-container" class="flex-center">
+                        <div id="submit-container" class="flex-center-row">
                             <input type="submit" class="button flex-grow-1" value="Cancel" formaction="index.html">
                             <input type="submit" class="button flex-grow-1" value="Recalculate" formaction="confirm-booking.html">
                             <input type="submit" class="button flex-grow-1" value="Confirm" formaction="booking-result.html">
@@ -131,10 +131,11 @@
     <article id="social-bar">
         <form>
             <fieldset>
-                <label for="social-email">.
-                    <input style="width: 80%; margin-top: 10px" type="text" id="social-email" value="Enter you email!">
+                <label for="social-email" id="social-label">
+                    Enter your email to receive news from us.
+                    <input type="text" id="social-email" value="Your email!">
                 </label>
-                <button type="button">Sign up!</button>
+                <button type="button" id="social-button">Sign up!</button>
             </fieldset>
         </form>
         <ul>
