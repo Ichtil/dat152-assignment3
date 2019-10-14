@@ -22,6 +22,11 @@ header, nav {
 
 }
 
+h1 {
+    color: #ffd100;
+    font-size: 30px;
+}
+
 #container {
     border-left: 12px;
     border-right: 12px;
@@ -156,6 +161,7 @@ header, nav {
     width: 95%;
     border-radius: 20px;
     color: #000;
+    font-size: 15px;
 }
 
 #reservation-container #reservation-heading {
@@ -505,3 +511,78 @@ header, nav {
     overflow: visible;
     text-decoration: underline;
 }
+
+
+@media only screen and (min-device-width: 600px) {
+
+    #social-bar {
+        display: flex;
+        padding: 20px 5px 20px 10px;
+        background-color: #000;
+        border-top: 1px solid #ffd100;
+        border-bottom: 1px solid #ffd100;
+    }
+
+    #social-bar ul {
+        width: 100%;
+        align-self: flex-end;
+        list-style: none;
+        float: right;
+        padding: 0;
+        margin: 0;
+    }
+
+    #social-bar form {
+        align-self: flex-start;
+        display: block;
+        width: 100%;
+    }
+
+    #social-bar li {
+        padding: 10px 10px 10px;
+    }
+
+    #social-bar li {
+        margin: 0;
+        float: right;
+        padding: 0;
+    }
+
+    #social-bar a {
+        display: block;
+        text-decoration: none;
+    }
+
+    #social-bar button {
+        float: right;
+        right: 0;
+        color: #000;
+        background-color: #ffd100;
+        padding: 10px 10px;
+        border: none;
+        border-radius: 10px;
+        font-size: 10pt;
+        font-weight: bold;
+        margin-left: 5px;
+    }
+
+    #social-bar img {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 40px;
+        height: 40px;
+    }
+
+    #social-bar fieldset {
+        display: block;
+        padding-block-start: 0.35em;
+        padding-inline-start: 0.75em;
+        padding-inline-end: 0.75em;
+        padding-block-end: 0.625em;
+        min-inline-size: min-content;
+        border-width: 2px;
+        border-style: groove;
+        border-color: white;
+    }
+}
+

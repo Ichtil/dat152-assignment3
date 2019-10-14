@@ -14,6 +14,8 @@
             // fill form values from url
             searchParams.forEach((x, y) => document.getElementById(y).innerText = x);
             document.getElementById("cost").innerText = calcPrice(searchParams);
+            const carCat = searchParams.get("car-category");
+            document.getElementById('picture').src = "img/" + carCat + ".jpg";
         }
     </script>
 </head>
@@ -24,7 +26,7 @@
             <section class="utility-bar">
                 <article class="logo-container">
                     <div class="logo-box">
-                        <img src="https://images.hertz.com/rac/misc/refresh09/logo_hertz_app.png" alt="Company logo">
+                        <h1 tabindex="0">Vrum Vrum</h1>
                     </div>
                 </article>
             </section>
@@ -75,21 +77,40 @@
             <div id="home-page">
                 <div id="reservation-container">
                     <div id="reservation-heading">
-                        <h1 id="main-content" tabindex="0">Booking confirmed!</h1>
+                        <h2 id="main-content" tabindex="0">Booking confirmed!</h2>
                     </div>
                     <div style="padding: 10px" >
                         <span tabindex="0">You are borrowing:</span>
                         <ul>
-                            <li tabindex="0">Category: <b id="car-category"> </b></li>
-                            <li tabindex="0">From city (location): <b id="location"></b></li>
-                            <li tabindex="0">From date <b id="pick-up-date"></b> and time <b id="pick-up-time"></b></li>
-                            <li tabindex="0">To date: <b id="return-date"></b> and time <b id="return-time"></b></li>
-                            <li tabindex="0">Cost (usd): <b id="cost"></b></li>
+                            <li tabindex="0">Category: <strong id="car-category"> </strong></li>
+                            <li tabindex="0">From city (location): <strong id="location"></strong></li>
+                            <li tabindex="0">From date <strong id="pick-up-date"></strong> and time <strong id="pick-up-time"></strong></li>
+                            <li tabindex="0">To date: <strong id="return-date"></strong> and time <strong id="return-time"></strong></li>
+                            <li tabindex="0">Cost (usd): <strong id="cost"></strong></li>
                         </ul>
+                        <img tabindex="0" style="padding: 10px 30px 10px;" id="picture" src="" alt="Picture of your choosen car.">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<footer>
+    <article id="social-bar">
+        <form>
+            <fieldset>
+                <label for="social-email">.
+                    <input style="width: 80%; margin-top: 10px" type="text" id="social-email" value="Enter you email!">
+                </label>
+                <button type="button">Sign up!</button>
+            </fieldset>
+        </form>
+        <ul>
+            <li><a tabindex="0" href="http://www.instagram.com/"><img src="img/ig.png" alt="Instagram"></a></li>
+            <li><a tabindex="0" href="https://twitter.com/"><img src="img/twitter.png" alt="Twitter"></a></li>
+            <li><a tabindex="0" href="https://www.facebook.com/"><img src="img/fb.png" alt="Facebook"></a></li>
+        </ul>
+    </article>
+</footer>
 </body>
 </html>
