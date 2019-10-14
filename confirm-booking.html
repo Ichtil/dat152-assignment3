@@ -74,59 +74,55 @@
         </div>
     </header>
     <div id="page">
-        <div id="page-container">
-            <div id="home-page">
-                <div id="reservation-container">
-                    <div id="reservation-heading">
-                        <h1 id="main-content">Confirm your booking</h1>
-                    </div>
-                    <div id="help-button">
-                      <abbr title="You use car guide to choose your car! This link will take you to our car guide page">
-                          <a href="car-guide.html">
-                              <img src="img/help.svg" alt="help-button" aria-label="You use car guide to choose your car! This link will take you to our car guide page.">
-                          </a>
-                      </abbr>
-                    </div>
-                    <form method="GET">
-                        <div id="location-time-date">
-                            <div class="label">
-                                <label>
-                                    Pick-up Location
-                                    <input type="text" name="location" id="location" required>
-                                </label>
-                                <label>
-                                    Pick-up Date and Time
-                                    <input type="date" id="pick-up-date" name="pick-up-date" value="" required aria-label="Pickup date input with format month - day - year">
-                                    <input type="time" id="pick-up-time" name="pick-up-time" value="" required aria-label="Pickup time input with format hour - minute - PM or AM">
-                                </label>
-                                <label>
-                                    Return Date and Time
-                                    <input type="date" name="return-date" id="return-date" value="" required aria-label="Return date input with format month - day - year">
-                                    <input type="time" name="return-time" id="return-time" value="" required aria-label="Return time input with format hour - minute - PM or AM">
-                                </label>
-                            </div>
-                        </div>
-                        <div id="car-details">
-                            <label>
-                                Car category
-                                <select name="car-category" id="car-category" class="label">
-                                    <option value="A">A</option>
-                                    <option value="B">B</option>
-                                    <option value="C">C</option>
-                                    <option value="D">D</option>
-                                </select>
-                            </label>
-                        </div>
-                        <b>The cost is: <span id="cost">0</span></b>
-                        <div id="submit-container" class="flex-center">
-                            <input type="submit" class="button flex-grow-1" value="Cancel" formaction="index.html">
-                            <input type="submit" class="button flex-grow-1" value="Recalculate" formaction="confirm-booking.html">
-                            <input type="submit" class="button flex-grow-1" value="Confirm" formaction="booking-result.html">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+       <div id="reservation-container">
+           <div id="reservation-heading">
+               <h1 id="main-content">Confirm your booking</h1>
+           </div>
+           <div id="help-button">
+             <abbr title="You use car guide to choose your car! This link will take you to our car guide page">
+                 <a href="car-guide.html">
+                     <img src="img/help.svg" alt="help-button" aria-label="You use car guide to choose your car! This link will take you to our car guide page.">
+                 </a>
+             </abbr>
+           </div>
+           <form method="GET">
+               <div id="location-time-date">
+                   <div class="label">
+                       <label>
+                           Pick-up Location
+                           <input type="text" name="location" id="location" required>
+                       </label>
+                       <label>
+                           Pick-up Date and Time
+                           <input type="date" id="pick-up-date" name="pick-up-date" value="" required aria-label="Pickup date input with format month - day - year">
+                           <input type="time" id="pick-up-time" name="pick-up-time" value="" required aria-label="Pickup time input with format hour - minute - PM or AM">
+                       </label>
+                       <label>
+                           Return Date and Time
+                           <input type="date" name="return-date" id="return-date" value="" required aria-label="Return date input with format month - day - year">
+                           <input type="time" name="return-time" id="return-time" value="" required aria-label="Return time input with format hour - minute - PM or AM">
+                       </label>
+                   </div>
+               </div>
+               <div id="car-details">
+                   <label>
+                       Car category
+                       <select name="car-category" id="car-category" class="label">
+                           <option value="A">A</option>
+                           <option value="B">B</option>
+                           <option value="C">C</option>
+                           <option value="D">D</option>
+                       </select>
+                   </label>
+               </div>
+               <b>The cost is: <span id="cost">0</span></b>
+               <div id="submit-container" class="flex-center-row">
+                   <input type="submit" class="button flex-grow-1" value="Cancel" formaction="index.html">
+                   <input type="submit" class="button flex-grow-1" value="Recalculate" formaction="confirm-booking.html">
+                   <input type="submit" class="button flex-grow-1" value="Confirm" formaction="booking-result.html">
+               </div>
+           </form>
+       </div>
     </div>
 </div>
 </body>
