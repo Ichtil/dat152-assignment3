@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Car Rental</title>
   <link rel="stylesheet" href="css/main.css">
   <script type="text/javascript">
@@ -11,6 +12,8 @@
       const searchParams = new URL(window.location.href).searchParams;
       // fill form values from url
       searchParams.forEach((x, y) => document.getElementById(y).value = x);
+      console.log("width", screen.width);
+      console.log("height", screen.height);
     }
   </script>
 </head>
