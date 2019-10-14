@@ -11,7 +11,10 @@
         window.onload = () => {
             const searchParams = new URL(window.location.href).searchParams;
             // fill form values from url
-            searchParams.forEach((x, y) => document.getElementById(y).value = x);
+            searchParams.forEach((x, y) =>  {
+                console.log (x, y, document.getElementById(y));
+                document.getElementById(y).value = x;
+            });
             document.getElementById("cost").innerText = calcPrice(searchParams);
         }
     </script>
@@ -88,13 +91,13 @@
                                 </label>
                                 <label>
                                     Pick-up Date and Time
-                                    <input type="date" name="pick-up-date" value="" required aria-label="Pickup date input with format month - day - year">
-                                    <input type="time" name="pick-up-time" value="" required aria-label="Pickup time input with format hour - minute - PM or AM">
+                                    <input type="date" id="pick-up-date" name="pick-up-date" value="" required aria-label="Pickup date input with format month - day - year">
+                                    <input type="time" id="pick-up-time" name="pick-up-time" value="" required aria-label="Pickup time input with format hour - minute - PM or AM">
                                 </label>
                                 <label>
                                     Return Date and Time
-                                    <input type="date" name="return-date" value="" required aria-label="Return date input with format month - day - year">
-                                    <input type="time" name="return-time" value="" required aria-label="Return time input with format hour - minute - PM or AM">
+                                    <input type="date" name="return-date" id="return-date" value="" required aria-label="Return date input with format month - day - year">
+                                    <input type="time" name="return-time" id="return-time" value="" required aria-label="Return time input with format hour - minute - PM or AM">
                                 </label>
                             </div>
                         </div>
