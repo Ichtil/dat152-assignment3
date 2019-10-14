@@ -34,10 +34,8 @@ h1 {
 
 @media (max-device-width: 601px) {
     /*#container {*/
-        /*display: flex;*/
+    /*display: flex;*/
     /*}*/
-
-
     #nav-container .nav-menu tr {
         display: flex;
         flex-direction: row;
@@ -80,11 +78,13 @@ h1 {
 
     }
 }
+
 @media (min-device-width: 600px) {
     .grid-container {
         display: grid;
     }
 }
+
 #header-container .utility-bar {
     width: 100%;
     background-color: #000;
@@ -257,7 +257,6 @@ h1 {
     transform: scale(0.95);
     transition: background .2s linear, -webkit-transform .4s cubic-bezier(0, .5, .6, 1);
 }
-
 
 
 #guide-container #guide-label {
@@ -512,77 +511,90 @@ h1 {
     text-decoration: underline;
 }
 
-
-@media only screen and (min-device-width: 600px) {
-
-    #social-bar {
-        display: flex;
-        padding: 20px 5px 20px 10px;
-        background-color: #000;
-        border-top: 1px solid #ffd100;
-        border-bottom: 1px solid #ffd100;
-    }
-
-    #social-bar ul {
-        width: 100%;
-        align-self: flex-end;
-        list-style: none;
-        float: right;
-        padding: 0;
-        margin: 0;
-    }
-
-    #social-bar form {
-        align-self: flex-start;
-        display: block;
-        width: 100%;
-    }
-
-    #social-bar li {
-        padding: 10px 10px 10px;
-    }
-
-    #social-bar li {
-        margin: 0;
-        float: right;
-        padding: 0;
-    }
-
-    #social-bar a {
-        display: block;
-        text-decoration: none;
-    }
-
-    #social-bar button {
-        float: right;
-        right: 0;
-        color: #000;
-        background-color: #ffd100;
-        padding: 10px 10px;
-        border: none;
-        border-radius: 10px;
-        font-size: 10pt;
-        font-weight: bold;
-        margin-left: 5px;
-    }
-
-    #social-bar img {
-        margin-left: 10px;
-        margin-right: 10px;
-        width: 40px;
-        height: 40px;
-    }
-
-    #social-bar fieldset {
-        display: block;
-        padding-block-start: 0.35em;
-        padding-inline-start: 0.75em;
-        padding-inline-end: 0.75em;
-        padding-block-end: 0.625em;
-        min-inline-size: min-content;
-        border-width: 2px;
-        border-style: groove;
-        border-color: white;
-    }
+footer {
+    margin-top: 5px;
 }
 
+#social-bar {
+    color: #fff;
+    display: flex;
+    padding: 10px;
+    background-color: #000;
+    border-top: 1px solid #ffd100;
+    border-bottom: 1px solid #ffd100;
+}
+
+#social-bar ul {
+    width: 100%;
+    align-self: flex-end;
+    list-style: none;
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+
+#social-bar form {
+    align-self: flex-start;
+    display: block;
+    min-width: 250px;
+    /*width: 100%;*/
+}
+
+#social-label {
+    width: 70%;
+    margin-top: 10px
+}
+
+#social-email {
+    width: 65%;
+    margin-top: 10px
+}
+
+#social-button {
+    width: 30%;
+    float: right;
+    right: 0;
+    color: #000;
+    background-color: #ffd100;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 10pt;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+#social-bar li {
+    padding: 10px 10px 10px;
+}
+
+#social-bar li {
+    margin: 0;
+    float: right;
+    padding: 0;
+}
+
+#social-bar a {
+    display: block;
+    text-decoration: none;
+}
+
+
+#social-bar img {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+#social-bar fieldset {
+    display: block;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: white;
+}
